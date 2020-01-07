@@ -46,6 +46,7 @@ module.exports = (api, options) => {
     const hasTS = api.hasPlugin('typescript')
 
     // router
+    /*
     if (api.hasPlugin('router')) {
       let cordovaRouterMode = `process.env.CORDOVA_PLATFORM ? 'hash' : `
       const routerFilePath = `src/router.${hasTS ? 'ts' : 'js'}`
@@ -73,7 +74,7 @@ module.exports = (api, options) => {
         api.exitLog(`Unable to find router file, make sure router mode is 'hash'`, 'warn')
       }
     }
-  })
+  })*/
 
   api.onCreateComplete(() => {
     // .gitignore - not included in files on postProcessFiles
